@@ -4,6 +4,9 @@
     "version": "0.0.1",
     "private": true,
     "license": "MIT",
+    "engines": {
+        "node": ">=18"
+    },
     "author": "Microsoft",
     "scripts": {
         "start": "node index.js",

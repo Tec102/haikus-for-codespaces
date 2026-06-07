@@ -1,0 +1,18 @@
+# Render.com Blueprint — one-click deploy of the World Cup 2026 site.
+# In Render: New + → Blueprint → connect this repo → Apply.
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: world-cup-2026
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /worldcup
+    autoDeploy: true
+    envVars:
+      # Live scores. Leave unset to ship predictions + bracket only.
+      # Get a free key at https://www.football-data.org/client/register
+      # then paste it here in Render → Environment. sync:false keeps it a secret.
+      - key: FOOTBALL_DATA_API_KEY
+        sync: false
