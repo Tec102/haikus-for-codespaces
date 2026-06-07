@@ -31,6 +31,28 @@ degrades gracefully. To enable live data:
 FOOTBALL_DATA_API_KEY=your_key_here npm start
 ```
 
+### Deploy it to the web (Render.com)
+
+The repo ships a `render.yaml` Blueprint, so getting a permanent public URL
+(openable on iPhone/iPad) takes a few minutes:
+
+1. Go to **[render.com](https://render.com)** and sign up / log in **with GitHub**.
+2. Click **New +** → **Blueprint**.
+3. Connect this repository (`tec102/haikus-for-codespaces`) and pick the branch
+   you want to deploy.
+4. Render reads `render.yaml`, shows a **world-cup-2026** web service on the
+   free plan → click **Apply**.
+5. Wait for the first build/deploy, then open the generated
+   `https://world-cup-2026-xxxx.onrender.com/worldcup` URL.
+
+> The free plan sleeps after inactivity and wakes on the next visit (~30s cold start).
+
+**Turn on live scores later:** in Render open the service → **Environment** →
+add `FOOTBALL_DATA_API_KEY` = your free key from
+[football-data.org](https://www.football-data.org/client/register) → save (it
+redeploys automatically). Until then, predictions and the bracket work; only
+the live feed stays off.
+
 ### Recomputing the ratings
 
 ```bash
