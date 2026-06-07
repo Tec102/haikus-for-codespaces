@@ -1,0 +1,39 @@
+{
+  "tournament": "2026 FIFA World Cup",
+  "hosts": ["United States", "Canada", "Mexico"],
+  "window": { "start": "2026-06-11", "end": "2026-07-19" },
+  "source": "Group draw and Round-of-32 bracket structure from Wikipedia (2026 FIFA World Cup), fetched 2026-06-07. Edit this file if the official fixtures change.",
+  "groups": {
+    "A": ["Mexico", "South Africa", "South Korea", "Czech Republic"],
+    "B": ["Canada", "Bosnia and Herzegovina", "Qatar", "Switzerland"],
+    "C": ["Brazil", "Morocco", "Haiti", "Scotland"],
+    "D": ["United States", "Paraguay", "Australia", "Turkey"],
+    "E": ["Germany", "Curaçao", "Ivory Coast", "Ecuador"],
+    "F": ["Netherlands", "Japan", "Sweden", "Tunisia"],
+    "G": ["Belgium", "Egypt", "Iran", "New Zealand"],
+    "H": ["Spain", "Cape Verde", "Saudi Arabia", "Uruguay"],
+    "I": ["France", "Senegal", "Iraq", "Norway"],
+    "J": ["Argentina", "Algeria", "Austria", "Jordan"],
+    "K": ["Portugal", "DR Congo", "Uzbekistan", "Colombia"],
+    "L": ["England", "Croatia", "Ghana", "Panama"]
+  },
+  "knockoutR32": [
+    { "match": 73, "home": "W:E", "away": "3RD" },
+    { "match": 74, "home": "2:A", "away": "2:B" },
+    { "match": 75, "home": "W:F", "away": "2:C" },
+    { "match": 76, "home": "2:K", "away": "2:L" },
+    { "match": 77, "home": "W:I", "away": "3RD" },
+    { "match": 78, "home": "W:D", "away": "3RD" },
+    { "match": 79, "home": "W:G", "away": "3RD" },
+    { "match": 80, "home": "W:C", "away": "2:F" },
+    { "match": 81, "home": "W:A", "away": "3RD" },
+    { "match": 82, "home": "2:E", "away": "2:I" },
+    { "match": 83, "home": "W:L", "away": "3RD" },
+    { "match": 84, "home": "W:H", "away": "2:J" },
+    { "match": 85, "home": "W:J", "away": "2:H" },
+    { "match": 86, "home": "2:D", "away": "2:G" },
+    { "match": 87, "home": "W:B", "away": "3RD" },
+    { "match": 88, "home": "W:K", "away": "3RD" }
+  ],
+  "notes": "Eight group winners (A,B,D,E,G,I,K,L) face the eight best third-placed teams; FIFA's official third-placed allocation table is approximated by seeding the strongest qualified third-placed teams (by Elo) into these slots. Bracket then progresses by sequential pairing of the matches above through Round of 16, Quarter-finals, Semi-finals and Final."
+}

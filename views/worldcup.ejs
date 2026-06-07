@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>World Cup 2026 — Elo Predictions & Live Scores</title>
+    <link href="/css/worldcup.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f1117" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="WC 2026" />
+    <meta name="format-detection" content="telephone=no" />
+  </head>
+  <body>
+    <%
+      function pct(x) { return Math.round(x * 100); }
+      const p = prediction;
+    %>
+    <header class="wc-header">
+      <h1>⚽ <%= p.wcMeta.tournament %></h1>
+      <p class="sub">Elo-based predictions from <%= p.meta.matches.toLocaleString() %> international matches
+        (<%= p.meta.dateRange.from %> → <%= p.meta.dateRange.to %>). Hosts: <%= p.wcMeta.hosts.join(', ') %>.</p>
+      <nav><a href="#live">Live</a> · <a href="#groups">Groups</a> · <a href="#winners">Winners</a> · <a href="#knockout">Bracket</a> · <a href="/">Haikus</a></nav>
+    </header>
+
+    <!-- LIVE SCORES -->
+    <section id="live" class="card live-card">
+      <div class="live-head">
+        <h2>🔴 Live scores</h2>
+        <button id="notify-btn" class="btn">Enable notifications</button>
+      </div>
+      <p id="live-status" class="muted">Loading live status…</p>
+      <div id="live-board"></div>
+      <div id="live-feed" class="feed" aria-live="polite"></div>
+    </section>
+
+    <!-- CHAMPION -->
+    <section class="card champ-card">
+      <div class="champ">🏆 Predicted champion: <strong><%= p.knockout.champion.team %></strong></div>
+    </section>
+
+    <!-- GROUPS -->
+    <h2 id="groups" class="section-title">Group stage</h2>
+    <div class="grid">
+      <% for (const letter of Object.keys(p.groups)) { const g = p.groups[letter]; %>
+        <section class="card group">
+          <h3>Group <%= letter %></h3>
+          <table class="standings">
+            <thead><tr><th>#</th><th>Team</th><th>xPts</th><th>Elo</th></tr></thead>
+            <tbody>
+              <% g.table.forEach((r) => { %>
+                <tr class="rank-<%= r.rank %>">
+                  <td><%= r.rank %></td>
+                  <td><%= r.team %><% if (r.rank<=2) { %> <span class="qual">✓</span><% } %></td>
+                  <td><%= r.xPts.toFixed(2) %></td>
+                  <td><%= Math.round(r.elo) %></td>
+                </tr>
+              <% }) %>
+            </tbody>
+          </table>
+          <details>
+            <summary>Match predictions</summary>
+            <ul class="matches">
+              <% g.matches.forEach((m) => { %>
+                <li class="match" data-home="<%= m.home %>" data-away="<%= m.away %>">
+                  <span class="teams"><%= m.home %> <em>v</em> <%= m.away %></span>
+                  <span class="pred">pick: <strong><%= m.pick %></strong> · <%= m.scoreline %></span>
+                  <span class="probs">
+                    <span class="bar"><span style="width:<%= pct(m.pHome) %>%"></span></span>
+                    <%= pct(m.pHome) %>/<%= pct(m.pDraw) %>/<%= pct(m.pAway) %>
+                  </span>
+                  <span class="live-score" data-live></span>
+                </li>
+              <% }) %>
+            </ul>
+          </details>
+        </section>
+      <% } %>
+    </div>
+
+    <!-- GROUP WINNERS PANEL -->
+    <h2 id="winners" class="section-title">Group winners</h2>
+    <p class="muted center">Predicted top team of each group — the seeds that enter the bracket.</p>
+    <div class="winners-grid">
+      <% for (const letter of Object.keys(p.groups)) { const w = p.groups[letter].table[0]; const r = p.groups[letter].table[1]; %>
+        <div class="winner-chip">
+          <span class="grp">Group <%= letter %></span>
+          <span class="win"><span class="medal">🥇</span><%= w.team %></span>
+          <span class="run"><span class="medal">🥈</span><%= r.team %></span>
+        </div>
+      <% } %>
+    </div>
+
+    <!-- KNOCKOUT BRACKET -->
+    <h2 id="knockout" class="section-title">Knockout bracket</h2>
+    <p class="muted center">Best third-placed qualifiers:
+      <%= p.knockout.thirds.map((t) => t.team + ' (' + t.letter + ')').join(', ') %></p>
+    <div class="bracket">
+      <% p.knockout.rounds.forEach((round, ri) => { %>
+        <section class="round">
+          <h3 class="round-title"><%= round.name %> <span class="round-count"><%= round.ties.length %></span></h3>
+          <ul class="ties">
+            <% round.ties.forEach((t) => {
+                 const homeAdv = t.advance.team === t.home.team;
+                 const awayAdv = t.advance.team === t.away.team; %>
+              <li class="tie" data-home="<%= t.home.team %>" data-away="<%= t.away.team %>">
+                <div class="seed <%= homeAdv ? 'adv' : '' %>">
+                  <span class="seed-name"><%= t.home.team %></span>
+                  <span class="seed-prob"><%= t.probHome %>%</span>
+                </div>
+                <div class="seed <%= awayAdv ? 'adv' : '' %>">
+                  <span class="seed-name"><%= t.away.team %></span>
+                  <span class="seed-prob"><%= t.probAway %>%</span>
+                </div>
+                <span class="live-score" data-live></span>
+              </li>
+            <% }) %>
+          </ul>
+        </section>
+      <% }) %>
+      <section class="round champion-round">
+        <h3 class="round-title">Champion</h3>
+        <div class="trophy-box"><span class="trophy">🏆</span><span><%= p.knockout.champion.team %></span></div>
+      </section>
+    </div>
+
+    <footer class="wc-footer">
+      <p><%= p.meta.method %>.</p>
+      <p class="muted"><%= p.wcMeta.source %></p>
+    </footer>
+
+    <script src="/js/worldcup.js"></script>
+  </body>
+</html>
