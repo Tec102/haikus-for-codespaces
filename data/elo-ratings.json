@@ -1,0 +1,1182 @@
+{
+  "meta": {
+    "generated": "2026-06-07T18:58:45.062Z",
+    "source": "martj42/international_results, last 10 years",
+    "matches": 9534,
+    "dateRange": {
+      "from": "2016-06-07",
+      "to": "2026-06-06"
+    },
+    "method": "World Football Elo (K by importance, goal-diff multiplier, 100-pt home advantage)"
+  },
+  "ratings": {
+    "Australia": {
+      "rating": 1838.1,
+      "games": 101
+    },
+    "Greece": {
+      "rating": 1666.8,
+      "games": 98
+    },
+    "Bangladesh": {
+      "rating": 1300.2,
+      "games": 75
+    },
+    "Tajikistan": {
+      "rating": 1518.6,
+      "games": 79
+    },
+    "Bulgaria": {
+      "rating": 1419.7,
+      "games": 95
+    },
+    "Denmark": {
+      "rating": 1778.4,
+      "games": 115
+    },
+    "Cambodia": {
+      "rating": 1264.6,
+      "games": 80
+    },
+    "Taiwan": {
+      "rating": 1208.2,
+      "games": 60
+    },
+    "Canada": {
+      "rating": 1800.6,
+      "games": 108
+    },
+    "Uzbekistan": {
+      "rating": 1793.7,
+      "games": 105
+    },
+    "China": {
+      "rating": 1545.7,
+      "games": 94
+    },
+    "Kazakhstan": {
+      "rating": 1393.9,
+      "games": 94
+    },
+    "Colombia": {
+      "rating": 1866.1,
+      "games": 118
+    },
+    "Paraguay": {
+      "rating": 1728.2,
+      "games": 97
+    },
+    "Curaçao": {
+      "rating": 1629.5,
+      "games": 73
+    },
+    "United States Virgin Islands": {
+      "rating": 1135.8,
+      "games": 35
+    },
+    "Dominican Republic": {
+      "rating": 1549.9,
+      "games": 65
+    },
+    "French Guiana": {
+      "rating": 1443.4,
+      "games": 44
+    },
+    "India": {
+      "rating": 1310.9,
+      "games": 87
+    },
+    "Laos": {
+      "rating": 1179.2,
+      "games": 59
+    },
+    "Iran": {
+      "rating": 1840.7,
+      "games": 109
+    },
+    "Kyrgyzstan": {
+      "rating": 1480.9,
+      "games": 79
+    },
+    "Japan": {
+      "rating": 1913.2,
+      "games": 129
+    },
+    "Bosnia and Herzegovina": {
+      "rating": 1501.1,
+      "games": 96
+    },
+    "Spain": {
+      "rating": 2042.2,
+      "games": 124
+    },
+    "Georgia": {
+      "rating": 1571.6,
+      "games": 103
+    },
+    "Saint Vincent and the Grenadines": {
+      "rating": 1429.8,
+      "games": 65
+    },
+    "Saint Kitts and Nevis": {
+      "rating": 1351.8,
+      "games": 66
+    },
+    "United States": {
+      "rating": 1731.4,
+      "games": 153
+    },
+    "Costa Rica": {
+      "rating": 1708.4,
+      "games": 135
+    },
+    "Yemen": {
+      "rating": 1413.7,
+      "games": 58
+    },
+    "Maldives": {
+      "rating": 1191.1,
+      "games": 62
+    },
+    "Brazil": {
+      "rating": 1872.5,
+      "games": 120
+    },
+    "Haiti": {
+      "rating": 1682.3,
+      "games": 78
+    },
+    "Ecuador": {
+      "rating": 1834.4,
+      "games": 110
+    },
+    "Peru": {
+      "rating": 1581.7,
+      "games": 116
+    },
+    "New Zealand": {
+      "rating": 1659.4,
+      "games": 70
+    },
+    "New Caledonia": {
+      "rating": 1622.9,
+      "games": 46
+    },
+    "Papua New Guinea": {
+      "rating": 1493.7,
+      "games": 41
+    },
+    "Solomon Islands": {
+      "rating": 1389.7,
+      "games": 60
+    },
+    "Portugal": {
+      "rating": 1876.3,
+      "games": 130
+    },
+    "Estonia": {
+      "rating": 1300.8,
+      "games": 113
+    },
+    "Mexico": {
+      "rating": 1862.5,
+      "games": 171
+    },
+    "Jamaica": {
+      "rating": 1664.7,
+      "games": 124
+    },
+    "Uruguay": {
+      "rating": 1799.8,
+      "games": 112
+    },
+    "Venezuela": {
+      "rating": 1633.4,
+      "games": 100
+    },
+    "Argentina": {
+      "rating": 1966.9,
+      "games": 123
+    },
+    "Panama": {
+      "rating": 1788.7,
+      "games": 143
+    },
+    "Chile": {
+      "rating": 1605,
+      "games": 118
+    },
+    "Bolivia": {
+      "rating": 1560.3,
+      "games": 105
+    },
+    "France": {
+      "rating": 1970.8,
+      "games": 131
+    },
+    "Romania": {
+      "rating": 1555.2,
+      "games": 105
+    },
+    "Albania": {
+      "rating": 1525.2,
+      "games": 102
+    },
+    "Switzerland": {
+      "rating": 1810.5,
+      "games": 118
+    },
+    "England": {
+      "rating": 1928.9,
+      "games": 126
+    },
+    "Russia": {
+      "rating": 1719.2,
+      "games": 94
+    },
+    "Seychelles": {
+      "rating": 1081.9,
+      "games": 58
+    },
+    "Madagascar": {
+      "rating": 1503.7,
+      "games": 84
+    },
+    "Wales": {
+      "rating": 1591.7,
+      "games": 107
+    },
+    "Slovakia": {
+      "rating": 1565.8,
+      "games": 108
+    },
+    "Zimbabwe": {
+      "rating": 1468.1,
+      "games": 88
+    },
+    "Eswatini": {
+      "rating": 1334.7,
+      "games": 73
+    },
+    "Benin": {
+      "rating": 1520.1,
+      "games": 81
+    },
+    "Equatorial Guinea": {
+      "rating": 1441.7,
+      "games": 76
+    },
+    "Germany": {
+      "rating": 1835.9,
+      "games": 126
+    },
+    "Ukraine": {
+      "rating": 1651.5,
+      "games": 106
+    },
+    "Lesotho": {
+      "rating": 1407.2,
+      "games": 82
+    },
+    "Mauritius": {
+      "rating": 1285.8,
+      "games": 65
+    },
+    "Malawi": {
+      "rating": 1452.6,
+      "games": 91
+    },
+    "Angola": {
+      "rating": 1567.1,
+      "games": 90
+    },
+    "Poland": {
+      "rating": 1595.2,
+      "games": 114
+    },
+    "Northern Ireland": {
+      "rating": 1519.6,
+      "games": 98
+    },
+    "Turkey": {
+      "rating": 1820.5,
+      "games": 114
+    },
+    "Croatia": {
+      "rating": 1805.5,
+      "games": 124
+    },
+    "Belgium": {
+      "rating": 1794.3,
+      "games": 123
+    },
+    "Italy": {
+      "rating": 1768.1,
+      "games": 118
+    },
+    "Republic of Ireland": {
+      "rating": 1611.5,
+      "games": 104
+    },
+    "Sweden": {
+      "rating": 1627.7,
+      "games": 120
+    },
+    "Czech Republic": {
+      "rating": 1665.5,
+      "games": 111
+    },
+    "Austria": {
+      "rating": 1737.7,
+      "games": 108
+    },
+    "Hungary": {
+      "rating": 1586.3,
+      "games": 106
+    },
+    "Iceland": {
+      "rating": 1480.7,
+      "games": 124
+    },
+    "Namibia": {
+      "rating": 1399.2,
+      "games": 80
+    },
+    "Botswana": {
+      "rating": 1403.3,
+      "games": 82
+    },
+    "South Africa": {
+      "rating": 1653.5,
+      "games": 121
+    },
+    "DR Congo": {
+      "rating": 1769.9,
+      "games": 102
+    },
+    "Mozambique": {
+      "rating": 1519.9,
+      "games": 95
+    },
+    "Bermuda": {
+      "rating": 1371.4,
+      "games": 59
+    },
+    "Zambia": {
+      "rating": 1535.9,
+      "games": 107
+    },
+    "Malaysia": {
+      "rating": 1559.6,
+      "games": 107
+    },
+    "Fiji": {
+      "rating": 1453.8,
+      "games": 63
+    },
+    "Macau": {
+      "rating": 1164.2,
+      "games": 33
+    },
+    "Mongolia": {
+      "rating": 1225.8,
+      "games": 48
+    },
+    "Northern Mariana Islands": {
+      "rating": 1322.2,
+      "games": 11
+    },
+    "Iraq": {
+      "rating": 1734.5,
+      "games": 132
+    },
+    "Singapore": {
+      "rating": 1406.8,
+      "games": 97
+    },
+    "Felvidék": {
+      "rating": 1521.8,
+      "games": 6
+    },
+    "Kárpátalja": {
+      "rating": 1598,
+      "games": 11
+    },
+    "Délvidék": {
+      "rating": 1496.2,
+      "games": 2
+    },
+    "Székely Land": {
+      "rating": 1523.2,
+      "games": 19
+    },
+    "Oman": {
+      "rating": 1578.3,
+      "games": 123
+    },
+    "Turkmenistan": {
+      "rating": 1452.9,
+      "games": 45
+    },
+    "Qatar": {
+      "rating": 1552.1,
+      "games": 149
+    },
+    "Bhutan": {
+      "rating": 1156.9,
+      "games": 36
+    },
+    "Donetsk PR": {
+      "rating": 1510.2,
+      "games": 2
+    },
+    "Luhansk PR": {
+      "rating": 1497.6,
+      "games": 3
+    },
+    "Jordan": {
+      "rating": 1765.2,
+      "games": 130
+    },
+    "North Korea": {
+      "rating": 1480.6,
+      "games": 56
+    },
+    "Honduras": {
+      "rating": 1694.1,
+      "games": 119
+    },
+    "Nicaragua": {
+      "rating": 1543.1,
+      "games": 90
+    },
+    "United Arab Emirates": {
+      "rating": 1663.8,
+      "games": 119
+    },
+    "Saudi Arabia": {
+      "rating": 1671.6,
+      "games": 146
+    },
+    "Burkina Faso": {
+      "rating": 1669.1,
+      "games": 110
+    },
+    "Barawa": {
+      "rating": 1346.4,
+      "games": 12
+    },
+    "Tamil Eelam": {
+      "rating": 1588.8,
+      "games": 16
+    },
+    "Chagos Islands": {
+      "rating": 1404.8,
+      "games": 7
+    },
+    "Syria": {
+      "rating": 1594.9,
+      "games": 110
+    },
+    "Puerto Rico": {
+      "rating": 1448.6,
+      "games": 50
+    },
+    "Egypt": {
+      "rating": 1774.8,
+      "games": 122
+    },
+    "Guinea": {
+      "rating": 1565.3,
+      "games": 90
+    },
+    "Uganda": {
+      "rating": 1511.5,
+      "games": 101
+    },
+    "Kenya": {
+      "rating": 1483.3,
+      "games": 83
+    },
+    "Morocco": {
+      "rating": 1924.7,
+      "games": 135
+    },
+    "Armenia": {
+      "rating": 1278.3,
+      "games": 94
+    },
+    "Liechtenstein": {
+      "rating": 908.2,
+      "games": 91
+    },
+    "Malta": {
+      "rating": 1245.9,
+      "games": 95
+    },
+    "Finland": {
+      "rating": 1436.7,
+      "games": 107
+    },
+    "Lebanon": {
+      "rating": 1512.1,
+      "games": 87
+    },
+    "Norway": {
+      "rating": 1834.5,
+      "games": 96
+    },
+    "Belarus": {
+      "rating": 1434.9,
+      "games": 100
+    },
+    "Bahrain": {
+      "rating": 1512.8,
+      "games": 129
+    },
+    "Hong Kong": {
+      "rating": 1452.1,
+      "games": 83
+    },
+    "South Korea": {
+      "rating": 1838,
+      "games": 129
+    },
+    "Netherlands": {
+      "rating": 1823.8,
+      "games": 113
+    },
+    "Gibraltar": {
+      "rating": 1074.4,
+      "games": 89
+    },
+    "Thailand": {
+      "rating": 1600.3,
+      "games": 120
+    },
+    "El Salvador": {
+      "rating": 1518.8,
+      "games": 115
+    },
+    "Latvia": {
+      "rating": 1226.2,
+      "games": 98
+    },
+    "Luxembourg": {
+      "rating": 1316.4,
+      "games": 97
+    },
+    "Mauritania": {
+      "rating": 1426.9,
+      "games": 93
+    },
+    "Sudan": {
+      "rating": 1459.7,
+      "games": 77
+    },
+    "Gabon": {
+      "rating": 1517.7,
+      "games": 80
+    },
+    "Trinidad and Tobago": {
+      "rating": 1540.8,
+      "games": 109
+    },
+    "Guatemala": {
+      "rating": 1639.4,
+      "games": 95
+    },
+    "Cameroon": {
+      "rating": 1724.5,
+      "games": 108
+    },
+    "Gambia": {
+      "rating": 1533.2,
+      "games": 68
+    },
+    "Cape Verde": {
+      "rating": 1621.2,
+      "games": 83
+    },
+    "Libya": {
+      "rating": 1538.3,
+      "games": 78
+    },
+    "Ethiopia": {
+      "rating": 1381.7,
+      "games": 65
+    },
+    "Ghana": {
+      "rating": 1619.9,
+      "games": 98
+    },
+    "Rwanda": {
+      "rating": 1448.9,
+      "games": 62
+    },
+    "Ivory Coast": {
+      "rating": 1783.1,
+      "games": 110
+    },
+    "Sierra Leone": {
+      "rating": 1471.1,
+      "games": 53
+    },
+    "Nigeria": {
+      "rating": 1862,
+      "games": 116
+    },
+    "Tanzania": {
+      "rating": 1433,
+      "games": 91
+    },
+    "Senegal": {
+      "rating": 1870.9,
+      "games": 126
+    },
+    "Algeria": {
+      "rating": 1824.4,
+      "games": 125
+    },
+    "Congo": {
+      "rating": 1332.6,
+      "games": 53
+    },
+    "Guinea-Bissau": {
+      "rating": 1391.2,
+      "games": 70
+    },
+    "Central African Republic": {
+      "rating": 1334.7,
+      "games": 56
+    },
+    "South Sudan": {
+      "rating": 1299.8,
+      "games": 56
+    },
+    "Lithuania": {
+      "rating": 1202.3,
+      "games": 97
+    },
+    "Slovenia": {
+      "rating": 1588.2,
+      "games": 98
+    },
+    "Mali": {
+      "rating": 1688.4,
+      "games": 91
+    },
+    "São Tomé and Príncipe": {
+      "rating": 1234.5,
+      "games": 34
+    },
+    "Niger": {
+      "rating": 1497.8,
+      "games": 71
+    },
+    "Burundi": {
+      "rating": 1378.2,
+      "games": 62
+    },
+    "Scotland": {
+      "rating": 1705.6,
+      "games": 102
+    },
+    "Montenegro": {
+      "rating": 1371.9,
+      "games": 95
+    },
+    "San Marino": {
+      "rating": 903,
+      "games": 89
+    },
+    "Azerbaijan": {
+      "rating": 1262.2,
+      "games": 95
+    },
+    "Togo": {
+      "rating": 1490.6,
+      "games": 75
+    },
+    "Djibouti": {
+      "rating": 1214.9,
+      "games": 35
+    },
+    "Tunisia": {
+      "rating": 1720.6,
+      "games": 133
+    },
+    "Liberia": {
+      "rating": 1420,
+      "games": 61
+    },
+    "Comoros": {
+      "rating": 1476.1,
+      "games": 94
+    },
+    "North Macedonia": {
+      "rating": 1518.8,
+      "games": 99
+    },
+    "Kosovo": {
+      "rating": 1648.8,
+      "games": 95
+    },
+    "Israel": {
+      "rating": 1544.8,
+      "games": 87
+    },
+    "Afghanistan": {
+      "rating": 1337.2,
+      "games": 50
+    },
+    "Serbia": {
+      "rating": 1666.5,
+      "games": 109
+    },
+    "Moldova": {
+      "rating": 1210.8,
+      "games": 101
+    },
+    "Andorra": {
+      "rating": 1073.2,
+      "games": 94
+    },
+    "Cyprus": {
+      "rating": 1241.6,
+      "games": 95
+    },
+    "Faroe Islands": {
+      "rating": 1320.2,
+      "games": 90
+    },
+    "Indonesia": {
+      "rating": 1520.3,
+      "games": 109
+    },
+    "Philippines": {
+      "rating": 1472.9,
+      "games": 85
+    },
+    "Palestine": {
+      "rating": 1569.9,
+      "games": 84
+    },
+    "Antigua and Barbuda": {
+      "rating": 1177.5,
+      "games": 46
+    },
+    "Vietnam": {
+      "rating": 1549.3,
+      "games": 101
+    },
+    "Cuba": {
+      "rating": 1458.5,
+      "games": 69
+    },
+    "Belize": {
+      "rating": 1382.4,
+      "games": 56
+    },
+    "Martinique": {
+      "rating": 1460.2,
+      "games": 49
+    },
+    "Suriname": {
+      "rating": 1602.5,
+      "games": 57
+    },
+    "Guyana": {
+      "rating": 1542.8,
+      "games": 61
+    },
+    "Timor-Leste": {
+      "rating": 1160.7,
+      "games": 43
+    },
+    "Sri Lanka": {
+      "rating": 1228,
+      "games": 53
+    },
+    "Brunei": {
+      "rating": 1199.5,
+      "games": 41
+    },
+    "Myanmar": {
+      "rating": 1281.5,
+      "games": 82
+    },
+    "Nepal": {
+      "rating": 1253.8,
+      "games": 76
+    },
+    "Guam": {
+      "rating": 1240.6,
+      "games": 28
+    },
+    "Tahiti": {
+      "rating": 1573.1,
+      "games": 32
+    },
+    "Ryūkyū": {
+      "rating": 1468,
+      "games": 1
+    },
+    "United Koreans in Japan": {
+      "rating": 1518.2,
+      "games": 7
+    },
+    "Catalonia": {
+      "rating": 1507.1,
+      "games": 2
+    },
+    "Basque Country": {
+      "rating": 1551.6,
+      "games": 6
+    },
+    "Barbados": {
+      "rating": 1220.6,
+      "games": 67
+    },
+    "Raetia": {
+      "rating": 1528.4,
+      "games": 8
+    },
+    "Alderney": {
+      "rating": 1362.3,
+      "games": 12
+    },
+    "Jersey": {
+      "rating": 1719.9,
+      "games": 25
+    },
+    "Panjab": {
+      "rating": 1542,
+      "games": 10
+    },
+    "Guadeloupe": {
+      "rating": 1578.4,
+      "games": 46
+    },
+    "Vatican City": {
+      "rating": 1493.9,
+      "games": 2
+    },
+    "Monaco": {
+      "rating": 1502.8,
+      "games": 1
+    },
+    "Guernsey": {
+      "rating": 1582.4,
+      "games": 20
+    },
+    "Dominica": {
+      "rating": 1283.5,
+      "games": 44
+    },
+    "Corsica": {
+      "rating": 1498.8,
+      "games": 1
+    },
+    "Northern Cyprus": {
+      "rating": 1588.7,
+      "games": 11
+    },
+    "Abkhazia": {
+      "rating": 1570.1,
+      "games": 17
+    },
+    "South Ossetia": {
+      "rating": 1475,
+      "games": 11
+    },
+    "Padania": {
+      "rating": 1561.4,
+      "games": 16
+    },
+    "Ellan Vannin": {
+      "rating": 1505.8,
+      "games": 9
+    },
+    "Grenada": {
+      "rating": 1344.2,
+      "games": 64
+    },
+    "Menorca": {
+      "rating": 1488,
+      "games": 9
+    },
+    "Orkney": {
+      "rating": 1481.4,
+      "games": 15
+    },
+    "Gotland": {
+      "rating": 1505.8,
+      "games": 4
+    },
+    "Frøya": {
+      "rating": 1341.8,
+      "games": 11
+    },
+    "Western Isles": {
+      "rating": 1471,
+      "games": 14
+    },
+    "Greenland": {
+      "rating": 1472.6,
+      "games": 9
+    },
+    "Åland Islands": {
+      "rating": 1453.7,
+      "games": 8
+    },
+    "Saare County": {
+      "rating": 1505.7,
+      "games": 4
+    },
+    "Shetland": {
+      "rating": 1516.8,
+      "games": 15
+    },
+    "Isle of Man": {
+      "rating": 1672.2,
+      "games": 18
+    },
+    "Hitra": {
+      "rating": 1475,
+      "games": 11
+    },
+    "Ynys Môn": {
+      "rating": 1626.5,
+      "games": 16
+    },
+    "Falkland Islands": {
+      "rating": 1357.6,
+      "games": 8
+    },
+    "Saint Lucia": {
+      "rating": 1287,
+      "games": 42
+    },
+    "Vanuatu": {
+      "rating": 1472.5,
+      "games": 42
+    },
+    "Tuvalu": {
+      "rating": 1340.8,
+      "games": 19
+    },
+    "Tonga": {
+      "rating": 1284.1,
+      "games": 16
+    },
+    "Zanzibar": {
+      "rating": 1563.5,
+      "games": 10
+    },
+    "Kuwait": {
+      "rating": 1495.9,
+      "games": 93
+    },
+    "Yorkshire": {
+      "rating": 1554.2,
+      "games": 7
+    },
+    "Turks and Caicos Islands": {
+      "rating": 1132.7,
+      "games": 33
+    },
+    "Saint Barthélemy": {
+      "rating": 1489.2,
+      "games": 8
+    },
+    "Saint Martin": {
+      "rating": 1471.4,
+      "games": 34
+    },
+    "Surrey": {
+      "rating": 1516.5,
+      "games": 1
+    },
+    "Sint Maarten": {
+      "rating": 1415.3,
+      "games": 35
+    },
+    "Cascadia": {
+      "rating": 1558.5,
+      "games": 7
+    },
+    "Tibet": {
+      "rating": 1353.6,
+      "games": 10
+    },
+    "Matabeleland": {
+      "rating": 1506,
+      "games": 8
+    },
+    "Western Armenia": {
+      "rating": 1527.7,
+      "games": 11
+    },
+    "Kabylia": {
+      "rating": 1483.3,
+      "games": 6
+    },
+    "Anguilla": {
+      "rating": 1105.4,
+      "games": 40
+    },
+    "British Virgin Islands": {
+      "rating": 1212.2,
+      "games": 39
+    },
+    "Pakistan": {
+      "rating": 1260.6,
+      "games": 30
+    },
+    "Bahamas": {
+      "rating": 1047.5,
+      "games": 39
+    },
+    "Montserrat": {
+      "rating": 1299,
+      "games": 36
+    },
+    "Bonaire": {
+      "rating": 1263.5,
+      "games": 31
+    },
+    "Aruba": {
+      "rating": 1323.3,
+      "games": 39
+    },
+    "Cayman Islands": {
+      "rating": 1165.9,
+      "games": 38
+    },
+    "Parishes of Jersey": {
+      "rating": 1518.6,
+      "games": 3
+    },
+    "Somaliland": {
+      "rating": 1488.1,
+      "games": 1
+    },
+    "Kernow": {
+      "rating": 1519.6,
+      "games": 2
+    },
+    "Chameria": {
+      "rating": 1546,
+      "games": 7
+    },
+    "Artsakh": {
+      "rating": 1509.8,
+      "games": 5
+    },
+    "Sápmi": {
+      "rating": 1444.5,
+      "games": 6
+    },
+    "Saint Helena": {
+      "rating": 1360.5,
+      "games": 8
+    },
+    "Franconia": {
+      "rating": 1512.3,
+      "games": 1
+    },
+    "Samoa": {
+      "rating": 1390,
+      "games": 17
+    },
+    "American Samoa": {
+      "rating": 1195.5,
+      "games": 12
+    },
+    "Réunion": {
+      "rating": 1499.4,
+      "games": 9
+    },
+    "Mayotte": {
+      "rating": 1528.3,
+      "games": 7
+    },
+    "Eritrea": {
+      "rating": 1446.9,
+      "games": 2
+    },
+    "Chad": {
+      "rating": 1262.3,
+      "games": 36
+    },
+    "Somalia": {
+      "rating": 1288.7,
+      "games": 22
+    },
+    "West Papua": {
+      "rating": 1469.5,
+      "games": 2
+    },
+    "East Turkestan": {
+      "rating": 1492.8,
+      "games": 5
+    },
+    "Cook Islands": {
+      "rating": 1334.8,
+      "games": 10
+    },
+    "Yoruba Nation": {
+      "rating": 1475.8,
+      "games": 2
+    },
+    "Biafra": {
+      "rating": 1512,
+      "games": 3
+    },
+    "Mapuche": {
+      "rating": 1498.2,
+      "games": 2
+    },
+    "Maule Sur": {
+      "rating": 1536.9,
+      "games": 2
+    },
+    "Aymara": {
+      "rating": 1464.9,
+      "games": 2
+    },
+    "Elba Island": {
+      "rating": 1512.8,
+      "games": 1
+    },
+    "Ticino": {
+      "rating": 1427.6,
+      "games": 2
+    },
+    "Two Sicilies": {
+      "rating": 1449.5,
+      "games": 2
+    },
+    "Isle of Wight": {
+      "rating": 1553.9,
+      "games": 4
+    },
+    "Gozo": {
+      "rating": 1502.2,
+      "games": 7
+    },
+    "Hmong": {
+      "rating": 1476.1,
+      "games": 3
+    },
+    "Galicia": {
+      "rating": 1490.6,
+      "games": 1
+    },
+    "Marshall Islands": {
+      "rating": 1422.2,
+      "games": 2
+    }
+  }
+}
