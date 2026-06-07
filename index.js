@@ -1,4 +1,5 @@
 let express = require('express');
+let path = require('path');
 let app = express();
 let ejs = require('ejs');
 const haikus = require('./haikus.json');
@@ -6,8 +7,11 @@ const { fullPrediction } = require('./src/wc/predict');
 const { fetchLive } = require('./src/wc/live');
 const port = process.env.PORT || 3000;
 
-app.use(express.static('public'))
+// Absolute paths so static/EJS work both locally and on Vercel's serverless
+// runtime (where the process cwd is not the project root).
+app.use(express.static(path.join(__dirname, 'public')))
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', (req, res) => {
   res.render('index', {haikus: haikus});
@@ -29,4 +33,11 @@ app.get('/api/live', async (req, res) => {
   res.json(await fetchLive());
 });
 
-app.listen(port);
+// Run a normal server locally / on container hosts; on Vercel the app is
+// imported as a serverless handler instead (see api/index.js), so only
+// listen when this file is executed directly.
+if (require.main === module) {
+  app.listen(port);
+}
+
+module.exports = app;
