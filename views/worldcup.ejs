@@ -4,7 +4,12 @@
     <meta charset="utf-8" />
     <title>World Cup 2026 — Elo Predictions & Live Scores</title>
     <link href="/css/worldcup.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f1117" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="WC 2026" />
+    <meta name="format-detection" content="telephone=no" />
   </head>
   <body>
     <%
@@ -15,7 +20,7 @@
       <h1>⚽ <%= p.wcMeta.tournament %></h1>
       <p class="sub">Elo-based predictions from <%= p.meta.matches.toLocaleString() %> international matches
         (<%= p.meta.dateRange.from %> → <%= p.meta.dateRange.to %>). Hosts: <%= p.wcMeta.hosts.join(', ') %>.</p>
-      <nav><a href="/">Haikus</a> · <a href="#groups">Groups</a> · <a href="#knockout">Knockout</a> · <a href="#live">Live</a></nav>
+      <nav><a href="#live">Live</a> · <a href="#groups">Groups</a> · <a href="#winners">Winners</a> · <a href="#knockout">Bracket</a> · <a href="/">Haikus</a></nav>
     </header>
 
     <!-- LIVE SCORES -->
@@ -73,26 +78,50 @@
       <% } %>
     </div>
 
-    <!-- KNOCKOUT -->
-    <h2 id="knockout" class="section-title">Knockout stage</h2>
+    <!-- GROUP WINNERS PANEL -->
+    <h2 id="winners" class="section-title">Group winners</h2>
+    <p class="muted center">Predicted top team of each group — the seeds that enter the bracket.</p>
+    <div class="winners-grid">
+      <% for (const letter of Object.keys(p.groups)) { const w = p.groups[letter].table[0]; const r = p.groups[letter].table[1]; %>
+        <div class="winner-chip">
+          <span class="grp">Group <%= letter %></span>
+          <span class="win"><span class="medal">🥇</span><%= w.team %></span>
+          <span class="run"><span class="medal">🥈</span><%= r.team %></span>
+        </div>
+      <% } %>
+    </div>
+
+    <!-- KNOCKOUT BRACKET -->
+    <h2 id="knockout" class="section-title">Knockout bracket</h2>
     <p class="muted center">Best third-placed qualifiers:
       <%= p.knockout.thirds.map((t) => t.team + ' (' + t.letter + ')').join(', ') %></p>
-    <div class="rounds">
-      <% p.knockout.rounds.forEach((round) => { %>
-        <section class="card round">
-          <h3><%= round.name %></h3>
+    <div class="bracket">
+      <% p.knockout.rounds.forEach((round, ri) => { %>
+        <section class="round">
+          <h3 class="round-title"><%= round.name %> <span class="round-count"><%= round.ties.length %></span></h3>
           <ul class="ties">
-            <% round.ties.forEach((t) => { %>
+            <% round.ties.forEach((t) => {
+                 const homeAdv = t.advance.team === t.home.team;
+                 const awayAdv = t.advance.team === t.away.team; %>
               <li class="tie" data-home="<%= t.home.team %>" data-away="<%= t.away.team %>">
-                <span class="t-home <%= t.advance.team === t.home.team ? 'adv' : '' %>"><%= t.home.team %></span>
-                <span class="t-prob"><%= t.probHome %>% – <%= t.probAway %>%</span>
-                <span class="t-away <%= t.advance.team === t.away.team ? 'adv' : '' %>"><%= t.away.team %></span>
+                <div class="seed <%= homeAdv ? 'adv' : '' %>">
+                  <span class="seed-name"><%= t.home.team %></span>
+                  <span class="seed-prob"><%= t.probHome %>%</span>
+                </div>
+                <div class="seed <%= awayAdv ? 'adv' : '' %>">
+                  <span class="seed-name"><%= t.away.team %></span>
+                  <span class="seed-prob"><%= t.probAway %>%</span>
+                </div>
                 <span class="live-score" data-live></span>
               </li>
             <% }) %>
           </ul>
         </section>
       <% }) %>
+      <section class="round champion-round">
+        <h3 class="round-title">Champion</h3>
+        <div class="trophy-box"><span class="trophy">🏆</span><span><%= p.knockout.champion.team %></span></div>
+      </section>
     </div>
 
     <footer class="wc-footer">
